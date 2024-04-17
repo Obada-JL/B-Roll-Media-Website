@@ -19,6 +19,10 @@ function MainPage() {
             <div>Case Studies</div>
           </div>
         </button>
+        <button class="button">
+          <div class="dots_border"></div>
+          <span class="text_button">Generate Site</span>
+        </button>
       </div>
     </>
   );
