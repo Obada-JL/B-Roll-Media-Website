@@ -1,10 +1,10 @@
-import NavLogo from "../assets/b roll nav logo test.png";
+import NavLogo from "../assets/b roll media.png";
 function NavBar() {
   return (
-    <div className="appContainer">
+    <div>
       <div className="headerContainer">
         <div className="navlogo">
-          <img src={NavLogo} />
+          <img src={NavLogo} width={125} />
         </div>
         <div className="links">
           <ul>
