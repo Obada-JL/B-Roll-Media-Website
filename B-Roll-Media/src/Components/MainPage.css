@@ -138,3 +138,118 @@
   color: rgb(19, 19, 23);
   opacity: 0.7;
 }
+.ServiceArrow {
+  font-size: 40px;
+  font-weight: bolder;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.ServiceArrow:hover {
+  transform: rotate(-90deg);
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+/* .serviceCheckbox:checked + .Arrow {
+  transform: rotate(-90deg);
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  animation-direction: alternate;
+} */
+.ServiceArrow > p {
+  margin-left: 1px;
+  margin-bottom: 8px;
+}
+/* .ServiceName {
+  font-size: 32px;
+  cursor: pointer;
+} */
+/* .service {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  cursor: pointer;
+} */
+.serviceDescription {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: #131317;
+  /* opacity: 0.7; */
+  margin-right: 50px;
+  /*  */
+  opacity: 0;
+  transition: all transform 0.6s ease-in-out;
+  max-height: 0.1rem;
+  overflow: hidden;
+}
+.service {
+  margin-top: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid #13131733;
+}
+.service {
+  padding: 10px 0;
+  position: relative;
+}
+/* .service:not(:last-of-type) {
+  border-bottom: 1px solid #13131733;
+} */
+.faq__arrow {
+  position: absolute;
+  width: 1.2rem;
+  max-width: 100%;
+  right: 0;
+  top: 15px;
+  transition: transform 0.6s ease-in-out;
+}
+.faq__input {
+  display: none;
+}
+.faq__input:checked + .serviceDescription {
+  opacity: 0.7;
+  max-height: 30rem;
+}
+.faq__input:checked ~ .serviceHeading .ServiceArrow {
+  transform: rotate(-180deg);
+}
+
+.faq__input:checked ~ .serviceDescription {
+  opacity: 0.7;
+  max-height: 30rem;
+  transition-property: max-height;
+  transition-duration: 0.7s;
+}
+.faq__input:checked ~ .faq__arrow {
+  transform: rotate(180deg);
+}
+.serviceName {
+  display: block;
+  font-size: 32px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.serviceDescription {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: #131317;
+  /* opacity: 0.7; */
+  margin-right: 50px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  max-height: 0.1rem;
+  overflow: hidden;
+  margin-bottom: 5px;
+}

@@ -13,6 +13,7 @@
   z-index: 5;
   filter: saturate(1.8);
   opacity: 1;
+  max-width: 1350px;
 }
 .links > ul {
   list-style-type: none;
