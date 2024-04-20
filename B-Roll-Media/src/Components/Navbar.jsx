@@ -1,7 +1,7 @@
 import NavLogo from "../assets/b roll media.png";
 function NavBar() {
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <div className="headerContainer">
         <div className="navlogo">
           <img src={NavLogo} width={125} />

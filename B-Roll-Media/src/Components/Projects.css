@@ -1,0 +1,19 @@
+.projectTitle {
+  font-size: 28px;
+  color: white;
+}
+.projectDate {
+  font-size: 18px;
+  color: #ffffff33;
+}
+.projectImg {
+  object-fit: cover;
+  /* transition: transform 0.8s;
+  transform-style: preserve-3d; */
+  transition: transform 0.4s ease-in-out;
+}
+.projectImg:hover {
+  transform: perspective(1200px) scale(1) rotate(0deg) rotateX(12deg)
+    rotateY(0deg) rotateX(0deg) translateZ(0px);
+  transition-property: transform;
+}

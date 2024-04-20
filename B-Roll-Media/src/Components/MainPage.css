@@ -1,6 +1,6 @@
 .appContainer {
-  margin-left: 7%;
-  margin-right: 7%;
+  /* margin-left: 7%;
+  margin-right: 7%; */
 }
 .TextSection {
   transform: translate(-50%, -50%);
@@ -119,6 +119,7 @@
 }
 .servicesSection {
   margin-top: 100vh;
+  padding: 0 100px;
 }
 .servicesMainHeader {
   font-weight: bold;
@@ -252,4 +253,41 @@
   max-height: 0.1rem;
   overflow: hidden;
   margin-bottom: 5px;
+}
+.projectsSection {
+  padding: 0 100px;
+}
+.ProjectsHeader {
+  font-size: 48px;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  display: inline-block;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projectsButton {
+  border-bottom-width: 1px;
+  border-color: rgba(255, 255, 255, 1);
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  opacity: 1;
+  color: white;
+}
+.projectsButton:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+  border-color: rgb(255, 255, 255, 0.6);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+.buttonText {
+  font-size: 18px;
 }

@@ -1,11 +1,14 @@
 import testBg from "../assets/BROLL MEDIA BG1.jpg";
 import "./MainPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Projects from "./Projects";
+import Test from "./test";
+
 function MainPage() {
   return (
     <>
-      <div style={{ position: "absolute", top: "0", zIndex: "-10" }}>
+      <div style={{ position: "absolute", top: "0" }}>
         <img src={testBg} style={{ height: "100vh", width: "98.93vw" }} />
       </div>
       <div className="appContainer">
@@ -115,6 +118,29 @@ function MainPage() {
               </p>
             </label>
           </div>
+        </div>
+        <div className="projectsSection bg-dark text-light w-100 pt-3 pb-3">
+          <div className="projectsHeader d-flex justify-content-between align-items-center pb-5">
+            <div className="ProjectsHeader pt-3 d-flex aloign-items-center justify-content-center">
+              Recent Works.
+            </div>
+            <div>
+              <button className="projectsButton d-flex gap-2 justify-content-center align-items-center">
+                <div className="buttonText">See All</div>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  size="lg"
+                  className="Arrow"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="Projects pt-5 pb-5">
+            <Projects />
+          </div>
+        </div>
+        <div>
+          <Test />
         </div>
       </div>
     </>
