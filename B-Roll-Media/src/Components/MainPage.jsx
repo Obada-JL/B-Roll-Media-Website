@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Projects from "./Projects";
 import Test from "./test";
+import Reviews from "./reviews";
+import Contact from "./Contact";
 
 function MainPage() {
   return (
@@ -140,8 +142,14 @@ function MainPage() {
           </div>
         </div>
         <div>
-          <Test />
+          <Reviews />
         </div>
+        <div>
+          <Contact />
+        </div>
+        {/* <div>
+          <Test />
+        </div> */}
       </div>
     </>
   );

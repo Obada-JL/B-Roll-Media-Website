@@ -291,3 +291,15 @@
 .buttonText {
   font-size: 18px;
 }
+.reviewsHeader {
+  background-image: linear-gradient(
+    0deg,
+    rgba(19, 19, 23, 0.2) 0%,
+    rgb(19, 19, 23) 56.4805%
+  );
+  display: inline-block;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: bold;
+}
