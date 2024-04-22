@@ -15,3 +15,51 @@
   -webkit-text-fill-color: transparent;
   font-weight: bolder;
 }
+.ContactForm {
+  width: 680px;
+}
+.infoInputs,
+.textArea {
+  padding: 20px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 1px transparent;
+  border: 0;
+  outline: 0;
+  border-radius: 40px;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: 20px;
+}
+.infoInputs::placeholder {
+  color: white;
+}
+.textArea {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 1.4em;
+  outline: none;
+  border: none;
+  min-height: 0;
+  padding: 20px 32px 20px 32px;
+  resize: vertical;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 1px transparent;
+  min-height: 300px;
+}
+.ContactButton {
+  border-radius: 40px;
+  font-size: 20px;
+}
+.textArea::placeholder {
+  color: white;
+}
+.ContactContainer {
+  background: url(../assets/BROLL MEDIA BG1.jpg) center center/cover no-repeat
+    fixed !important;
+}
