@@ -303,3 +303,63 @@
   font-size: 48px;
   font-weight: bold;
 }
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 35%;
+  z-index: 12;
+  display: flex;
+}
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 15px;
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.4);
+  filter: saturate(1.8);
+  border: 1px solid rgba(19, 19, 23, 0.6);
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  color: rgb(19, 19, 23);
+  opacity: 0.4;
+}
+.sidebar ul li:hover {
+  color: rgb(19, 19, 23) !important;
+  opacity: 0.4;
+  transition-property: color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.names {
+  /* gap: 18px;
+  padding: 15px;
+  font-size: 14px;
+  justify-content: space-around;
+  margin-bottom: 20px; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 15px;
+}
+.sidebarServices {
+  margin-block-end: 0;
+  color: white;
+  backdrop-filter: blur(25px);
+  background-color: black;
+  opacity: 0.6 !important;
+  padding: 5px 10px;
+  border-radius: 15px;
+  /* filter: saturate(1.8); */
+  display: flex !important;
+  justify-content: center;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+.sidebarNav {
+  opacity: 0;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}

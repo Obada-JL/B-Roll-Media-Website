@@ -1,17 +1,94 @@
 import testBg from "../assets/BROLL MEDIA BG1.jpg";
 import "./MainPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faArrowRight,
+  faBriefcase,
+  faCommentDots,
+  faGlobe,
+  faHouse,
+  faInbox,
+} from "@fortawesome/free-solid-svg-icons";
 import Projects from "./Projects";
 import Test from "./test";
 import Reviews from "./reviews";
 import Contact from "./Contact";
+import { useRef } from "react";
 
 function MainPage() {
+  const names = useRef();
+  const displayingSidebar = (number) => {
+    names.current.children[number].classList.add("sidebarServices");
+  };
+  const HideSidebar = (number) => {
+    names.current.children[number].classList.remove("sidebarServices");
+  };
   return (
     <>
       <div style={{ position: "absolute", top: "0" }}>
         <img src={testBg} style={{ height: "100vh", width: "98.93vw" }} />
+      </div>
+      <div className="sidebar">
+        <ul>
+          <li
+            onMouseEnter={() => {
+              displayingSidebar(0);
+            }}
+            onMouseLeave={() => {
+              HideSidebar(0);
+            }}
+          >
+            <FontAwesomeIcon icon={faHouse} size="xl" />
+          </li>
+          <li
+            onMouseEnter={() => {
+              displayingSidebar(1);
+            }}
+            onMouseLeave={() => {
+              HideSidebar(1);
+            }}
+          >
+            <FontAwesomeIcon icon={faGlobe} size="xl" />
+          </li>
+          <li
+            onMouseEnter={() => {
+              displayingSidebar(2);
+            }}
+            onMouseLeave={() => {
+              HideSidebar(2);
+            }}
+          >
+            <FontAwesomeIcon icon={faBriefcase} size="xl" />
+          </li>
+          <li
+            onMouseEnter={() => {
+              displayingSidebar(3);
+            }}
+            onMouseLeave={() => {
+              HideSidebar(3);
+            }}
+          >
+            <FontAwesomeIcon icon={faCommentDots} size="xl" />
+          </li>
+          <li
+            onMouseEnter={() => {
+              displayingSidebar(4);
+            }}
+            onMouseLeave={() => {
+              HideSidebar(4);
+            }}
+          >
+            <FontAwesomeIcon icon={faInbox} size="xl" />
+          </li>
+        </ul>
+        <div className="names d-flex flex-column" ref={names}>
+          <p className="sidebarNav">Home</p>
+          <p className="sidebarNav">Services</p>
+          <p className="sidebarNav">Works</p>
+          <p className="sidebarNav">Reviews</p>
+          <p className="sidebarNav">Contact</p>
+        </div>
       </div>
       <div className="appContainer">
         <div className="TextSection">
