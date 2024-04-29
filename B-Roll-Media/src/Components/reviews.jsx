@@ -1,21 +1,22 @@
 import { useEffect, useState } from "react";
 import "./reviews.css";
+import Counter from "./Counter";
 function Reviews() {
   const Experiences = [
     {
-      number: "15+",
+      number: <Counter target={15} duration={2} />,
       text: "Years of Experience",
     },
     {
-      number: "44+",
+      number: <Counter target={44} duration={2} />,
       text: "Satisfied Clients",
     },
     {
-      number: "54+",
+      number: <Counter target={55} duration={2} />,
       text: "Projects Delivered",
     },
     {
-      number: "26+",
+      number: <Counter target={25} duration={2} />,
       text: "MVP Designed",
     },
   ];
@@ -24,7 +25,7 @@ function Reviews() {
   useEffect(() => {
     const ourExperiences = Experiences.map((field, index) => (
       <div className="d-flex flex-column justify-content-center align-items-center">
-        <h6 className="reviewCounter">{field.number}</h6>
+        {field.number}
         <div className="reviewField">{field.text}</div>
       </div>
     ));

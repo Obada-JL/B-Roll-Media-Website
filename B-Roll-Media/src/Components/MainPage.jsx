@@ -11,12 +11,19 @@ import {
   faInbox,
 } from "@fortawesome/free-solid-svg-icons";
 import Projects from "./Projects";
-import Test from "./test";
 import Reviews from "./reviews";
 import Contact from "./Contact";
 import { useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 function MainPage() {
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.5,
+  });
+  const { ref2, inView2, entry2 } = useInView({
+    threshold: 0.5,
+  });
   const names = useRef();
   const displayingSidebar = (number) => {
     names.current.children[number].classList.add("sidebarServices");
@@ -29,7 +36,7 @@ function MainPage() {
       <div style={{ position: "absolute", top: "0" }}>
         <img src={testBg} style={{ height: "100vh", width: "98.93vw" }} />
       </div>
-      <div className="sidebar">
+      <div className={`sidebar transition-all ${inView ? "d-none" : "d-flex"}`}>
         <ul>
           <li
             onMouseEnter={() => {
@@ -91,8 +98,13 @@ function MainPage() {
         </div>
       </div>
       <div className="appContainer">
-        <div className="TextSection">
-          <div>
+        <div
+          className={`TextSection transition-all duration-[320ms] ${
+            inView ? "opacity-100" : "opacity-0"
+          }`}
+          ref={ref}
+        >
+          <div className="mb-5 mt-5">
             <p>Designing Tomorrow</p>
             <h1>
               Unleashing Creativity <br />

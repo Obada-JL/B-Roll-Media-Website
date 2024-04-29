@@ -13,6 +13,8 @@
   filter: saturate(1.8);
   opacity: 1;
   max-width: 1350px;
+  transition-property: opacity;
+  transition-duration: 0.3s;
 }
 .links > ul {
   list-style-type: none;
