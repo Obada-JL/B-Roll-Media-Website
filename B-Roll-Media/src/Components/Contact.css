@@ -63,3 +63,117 @@
   background: url(../assets/BROLL MEDIA BG1.jpg) center center/cover no-repeat
     fixed !important;
 }
+.ContactCard {
+  /* backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.4);
+  filter: saturate(1.8); */
+  -webkit-appearance: none;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  width: 1000px;
+  height: 450px;
+}
+.ContactCard1 {
+  animation: conactSliderAnimation 3s;
+}
+.openContactCard1 {
+  animation: conactSliderAnimation 3s;
+  animation-direction: alternate;
+}
+.ContactCard2 {
+}
+@keyframes contactSliderAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    margin-right: 250px;
+  }
+}
+.socialMediaIcon {
+  font-size: 35px;
+}
+.socialMediaIcons {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.cardContainer {
+  padding: 0 75px;
+  gap: 140px;
+}
+.companyName {
+  font-size: 35px;
+  font-weight: 600;
+  margin-block-start: -0.5em;
+  text-align: center;
+}
+hr {
+  opacity: 0.5;
+}
+.secondSectionInfo {
+  font-size: 20px;
+  font-weight: bold;
+}
+.PersonalPhotoContainer {
+  /* width: 50px; */
+  height: auto;
+  width: auto;
+}
+.PersonalPhoto {
+  border-radius: 50%;
+  /* position: relative; */
+}
+.teamMember {
+  width: 425px;
+  height: 75px;
+  /* background-color: white; */
+  padding: 25px;
+}
+.member {
+  display: flex;
+  filter: saturate(1.8);
+  opacity: 1;
+  background-color: rgba(19, 19, 23, 0.4);
+  font-weight: bolder;
+  padding: 10px 25px;
+  gap: 15px;
+  border-radius: 35px;
+  color: rgb(214, 214, 214);
+}
+.personNameContainer p {
+  margin-block-end: 0em;
+}
+.personName {
+  font-weight: bold;
+}
+.position {
+  font-weight: 600;
+}
+.ourTeam {
+  flex-wrap: wrap;
+  display: flex;
+  /* padding: 7px; */
+  justify-content: space-around;
+}
+.firstSectionContainer {
+  /* visibility: visible; */
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 00%, 0);
+  }
+}

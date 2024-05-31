@@ -30,7 +30,7 @@
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 7s linear infinite;
+  animation: primary 15s linear infinite;
   display: flex;
   gap: 25px;
 }
@@ -39,11 +39,11 @@
   font-size: 16px;
 }
 .primary {
-  animation: primary 7s linear infinite;
+  animation: primary 15s linear infinite;
 }
 
 .secondary {
-  animation: secondary 7s linear infinite;
+  animation: secondary 15s linear infinite;
 }
 
 @keyframes primary {

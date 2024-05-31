@@ -8,16 +8,12 @@ function Reviews() {
       text: "Years of Experience",
     },
     {
-      number: <Counter target={44} duration={2} />,
+      number: <Counter target={110} duration={2} />,
       text: "Satisfied Clients",
     },
     {
-      number: <Counter target={55} duration={2} />,
+      number: <Counter target={167} duration={2} />,
       text: "Projects Delivered",
-    },
-    {
-      number: <Counter target={25} duration={2} />,
-      text: "MVP Designed",
     },
   ];
   const [experience, setExperience] = useState([]);
@@ -35,7 +31,7 @@ function Reviews() {
   return (
     <div className="mt-5 mb-5" style={{ padding: "0 100px" }}>
       <h2 className="reviewsHeader d-flex justify-content-center mb-5">
-        Happy Customers
+        Clients Feedback
       </h2>
       <div class="scroll-parent">
         <div class="scroll-element primary pe-3">
@@ -92,7 +88,7 @@ function Reviews() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-between mb-5">{experience}</div>
+      <div className="d-flex justify-content-around mb-5">{experience}</div>
     </div>
   );
 }

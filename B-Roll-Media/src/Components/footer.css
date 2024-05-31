@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  /* width: 90%; */
   margin-bottom: 25px;
   background-color: rgba(19, 19, 23, 0.4);
   border-radius: 44px;
@@ -37,6 +37,7 @@
   margin-top: 0;
   justify-content: space-around;
   width: 100%;
+  padding-inline-start: 0px;
 }
 .footerlinks > ul > li {
   cursor: pointer;
