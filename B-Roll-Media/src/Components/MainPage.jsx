@@ -19,11 +19,10 @@ import Project1 from "../assets/projects photo test 1.webp";
 import Project2 from "../assets/projects photo test 2.webp";
 import Project3 from "../assets/projects photo test 3.webp";
 function MainPage(props) {
-  const project1Title = "Safe School Common Approach: ATAA Relief";
-  const project1Date = "Mar 2022";
+  const project1Title = "Beard Production Line: SAKK Ovens";
+  const project1Date = "May 2024";
   // Project2 infos
-  const project2Title =
-    "Industrial Catalog : AGHA GROUP Carpet Industry Machines";
+  const project2Title = "Syrian Refugees Shelter: Qatar Charity";
   const project2Date = "June 2018";
   // Project3 infos
   const project3Title = "Graphic Design Training Course: GHAZWAN SHABAAN";
@@ -46,13 +45,14 @@ function MainPage(props) {
       date: project3Date,
     },
   ];
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0.5,
-  });
-  const { ref2, inView2, entry2 } = useInView({
-    threshold: 0.5,
-  });
+  // const { ref, inView, entry } = useInView({
+  //   threshold: 0.5,
+  // });
+  // const { ref2, inView2, entry2 } = useInView({
+  //   threshold: 0.5,
+  // });
+  const [ref, inView] = useInView();
+  // const [ref2, inView2] = useInView();
   const names = useRef();
   const displayingSidebar = (number) => {
     names.current.children[number].classList.add("sidebarServices");
@@ -137,7 +137,7 @@ function MainPage(props) {
           </div>
           <button class="button">Promo</button>
         </div>
-        <div className="servicesSection pt-5">
+        <div className={`servicesSection pt-5`}>
           <div className="headings">
             <h2>
               <span className="servicesMainHeader mb-3">What We do ?</span>

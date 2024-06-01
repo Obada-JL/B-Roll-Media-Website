@@ -1,13 +1,18 @@
 .appContainer {
   /* margin-left: 7%;
   margin-right: 7%; */
+  /* position: relative; */
+  overflow-x: hidden;
 }
 .TextSection {
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  position: absolute;
+  top: 25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   text-align: center;
+  position: absolute;
+  align-self: center;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -16,6 +21,7 @@
   transition-property: opacity;
   transition-delay: 0.08s;
   transition-duration: 0.4s;
+  width: 800px;
 }
 .TextSection > div > p {
   font-size: 40px;

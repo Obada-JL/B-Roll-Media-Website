@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import AtaaReview from "../assets/ataa.png";
+import AghaReview from "../assets/agha_group.png";
+import HijazReview from "../assets/hijaz_road.png";
+import DrRfiaiReview from "../assets/dr_rifai.png";
 import "./reviews.css";
 import Counter from "./Counter";
 function Reviews() {
@@ -34,57 +38,17 @@ function Reviews() {
         Clients Feedback
       </h2>
       <div class="scroll-parent">
-        <div class="scroll-element primary pe-3">
-          <p>
-            1Abusrea has the advantageous ability to understand a problem and
-            implement code to a high standard within the deadline. Each project
-            we have worked on, I know I can completely trust Abusrea to own his
-            tasks and complete what is needed when asked of him.
-          </p>
-          <p>
-            2Mohamed will patiently listen to you and give you his own Ideas as
-            well, and in the end, he comes up with something completely
-            different from what you’re expecting, but the good news is, you’ll
-            always love it.
-          </p>
-          <p>
-            3Abusrea has the advantageous ability to understand a problem and
-            implement code to a high standard within the deadline. Each project
-            we have worked on, I know I can completely trust Abusrea to own his
-            tasks and complete what is needed when asked of him.aaaaaaaaa
-          </p>
-          <p>
-            4Mohamed will patiently listen to you and give you his own Ideas as
-            well, and in the end, he comes up with something completely
-            different from what you’re expecting, but the good news is, you’ll
-            always love it. aaaaaaaaaa
-          </p>
+        <div class="scroll-element primary">
+          <img src={AtaaReview} />
+          <img src={AghaReview} />
+          <img src={HijazReview} />
+          <img src={DrRfiaiReview} />
         </div>
         <div class="scroll-element secondary">
-          <p>
-            1Abusrea has the advantageous ability to understand a problem and
-            implement code to a high standard within the deadline. Each project
-            we have worked on, I know I can completely trust Abusrea to own his
-            tasks and complete what is needed when asked of him.
-          </p>
-          <p>
-            2Mohamed will patiently listen to you and give you his own Ideas as
-            well, and in the end, he comes up with something completely
-            different from what you’re expecting, but the good news is, you’ll
-            always love it.
-          </p>
-          <p>
-            3Abusrea has the advantageous ability to understand a problem and
-            implement code to a high standard within the deadline. Each project
-            we have worked on, I know I can completely trust Abusrea to own his
-            tasks and complete what is needed when asked of him.aaaaaaaaa
-          </p>
-          <p>
-            4Mohamed will patiently listen to you and give you his own Ideas as
-            well, and in the end, he comes up with something completely
-            different from what you’re expecting, but the good news is, you’ll
-            always love it. aaaaaaaaaa
-          </p>
+          <img src={AtaaReview} />
+          <img src={AghaReview} />
+          <img src={HijazReview} />
+          <img src={DrRfiaiReview} />
         </div>
       </div>
 

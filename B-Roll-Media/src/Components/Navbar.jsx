@@ -10,7 +10,7 @@ function NavBar() {
       <div
         ref={ref}
         className={`headerContainer transition-all ${
-          inView ? "opacity-100" : "opacity-0"
+          inView ? "firstSectionContainer" : ""
         }`}
       >
         <div className="navlogo">
