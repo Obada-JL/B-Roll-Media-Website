@@ -27,7 +27,7 @@ function Projects(props) {
   }, []);
   return (
     <>
-      <div className="d-flex gap-5 justify-content-between w-100">
+      <div className="d-flex flex-wrap gap-5 justify-content-between w-100">
         {projects}
       </div>
     </>

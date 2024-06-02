@@ -68,3 +68,64 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media screen and (max-width: 800px) {
+  .TextSection {
+    width: 350px;
+  }
+  .TextSection > div > p,
+  .header1 {
+    font-size: 24px;
+  }
+  .TextSection > div > h1 {
+    font-size: 40px;
+  }
+  .servicesSection,
+  .projectsSection,
+  .reviewsContainer {
+    padding: 0 20px !important;
+  }
+  .servicesMainHeader,
+  .ProjectsHeader,
+  .header2 {
+    font-size: 40px;
+  }
+  .servicesDescription {
+    font-size: 20px;
+  }
+  .ServiceArrow {
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+  }
+  .serviceName {
+    font-size: 24px;
+  }
+  .projectsHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .secondary {
+    display: none;
+  }
+  .cardContainer {
+    flex-direction: column;
+  }
+  .ContactCard {
+    width: 350px;
+    height: 750px;
+  }
+  .map {
+    width: 330px !important;
+  }
+  .copyright > p {
+    text-align: center;
+  }
+  .header2,
+  .reviewsHeader {
+    text-align: center;
+  }
+  .button {
+    width: 180px;
+    height: 70px;
+  }
+}

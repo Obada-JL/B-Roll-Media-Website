@@ -68,6 +68,7 @@ function Contact() {
                     allowfullscreen=""
                     loading="lazy"
                     style={{ borderRadius: "15px" }}
+                    className="map"
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>

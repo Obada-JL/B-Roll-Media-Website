@@ -33,7 +33,7 @@ function Reviews() {
     setExperience(ourExperiences);
   }, []);
   return (
-    <div className="mt-5 mb-5" style={{ padding: "0 100px" }}>
+    <div className="mt-5 mb-5 reviewsContainer" style={{ padding: "0 100px" }}>
       <h2 className="reviewsHeader d-flex justify-content-center mb-5">
         Clients Feedback
       </h2>
@@ -52,7 +52,9 @@ function Reviews() {
         </div>
       </div>
 
-      <div className="d-flex justify-content-around mb-5">{experience}</div>
+      <div className="d-flex flex-wrap justify-content-around mb-5">
+        {experience}
+      </div>
     </div>
   );
 }

@@ -1,32 +1,68 @@
 import { useInView } from "react-intersection-observer";
 import NavLogo from "../assets/b roll media.png";
+import "./Navbar.css";
 function NavBar() {
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: 0.5,
   });
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center navbar navbar-expand-lg">
       <div
         ref={ref}
-        className={`headerContainer transition-all ${
+        className={`container-fluid headerContainer transition-all ${
           inView ? "firstSectionContainer" : ""
         }`}
       >
-        <div className="navlogo">
+        <div className="navlogo navbar-brand">
           <img src={NavLogo} width={125} />
         </div>
-        <div className="links">
-          <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Works</li>
-            <li>Reviews</li>
-            <li>Contact</li>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div
+          className="links collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Works
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Reviews
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+
     // <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
     //   <div class="container-fluid">
     //     <a class="navbar-brand" href="#">
