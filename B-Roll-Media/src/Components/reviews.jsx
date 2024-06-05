@@ -33,7 +33,11 @@ function Reviews() {
     setExperience(ourExperiences);
   }, []);
   return (
-    <div className="mt-5 mb-5 reviewsContainer" style={{ padding: "0 100px" }}>
+    <div
+      className="mt-5 mb-5 reviewsContainer"
+      id="reviewsContainer"
+      style={{ padding: "0 100px" }}
+    >
       <h2 className="reviewsHeader d-flex justify-content-center mb-5">
         Clients Feedback
       </h2>

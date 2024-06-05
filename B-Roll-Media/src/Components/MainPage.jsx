@@ -18,6 +18,7 @@ import { useInView } from "react-intersection-observer";
 import Project1 from "../assets/projects photo test 1.webp";
 import Project2 from "../assets/projects photo test 2.webp";
 import Project3 from "../assets/projects photo test 3.webp";
+import { Link } from "react-router-dom";
 function MainPage(props) {
   const project1Title = "Beard Production Line: SAKK Ovens";
   const project1Date = "May 2024";
@@ -75,7 +76,13 @@ function MainPage(props) {
               HideSidebar(0);
             }}
           >
-            <FontAwesomeIcon icon={faHouse} size="xl" />
+            <a href="/#">
+              <FontAwesomeIcon
+                icon={faHouse}
+                size="xl"
+                style={{ color: "#242424" }}
+              />
+            </a>
           </li>
           <li
             onMouseEnter={() => {
@@ -85,7 +92,13 @@ function MainPage(props) {
               HideSidebar(1);
             }}
           >
-            <FontAwesomeIcon icon={faGlobe} size="xl" />
+            <a href="/#servicesSection">
+              <FontAwesomeIcon
+                icon={faGlobe}
+                size="xl"
+                style={{ color: "#242424" }}
+              />
+            </a>
           </li>
           <li
             onMouseEnter={() => {
@@ -95,7 +108,13 @@ function MainPage(props) {
               HideSidebar(2);
             }}
           >
-            <FontAwesomeIcon icon={faBriefcase} size="xl" />
+            <a href="/#projectsSection">
+              <FontAwesomeIcon
+                icon={faBriefcase}
+                size="xl"
+                style={{ color: "#242424" }}
+              />
+            </a>
           </li>
           <li
             onMouseEnter={() => {
@@ -105,7 +124,13 @@ function MainPage(props) {
               HideSidebar(3);
             }}
           >
-            <FontAwesomeIcon icon={faCommentDots} size="xl" />
+            <a href="/#reviewsContainer">
+              <FontAwesomeIcon
+                icon={faCommentDots}
+                size="xl"
+                style={{ color: "#242424" }}
+              />
+            </a>
           </li>
           <li
             onMouseEnter={() => {
@@ -115,7 +140,13 @@ function MainPage(props) {
               HideSidebar(4);
             }}
           >
-            <FontAwesomeIcon icon={faInbox} size="xl" />
+            <a href="/#ContactContainer">
+              <FontAwesomeIcon
+                icon={faInbox}
+                size="xl"
+                style={{ color: "#242424" }}
+              />
+            </a>
           </li>
         </ul>
         <div className="names d-flex flex-column" ref={names}>
@@ -137,7 +168,7 @@ function MainPage(props) {
           </div>
           <button class="button">Promo</button>
         </div>
-        <div className={`servicesSection pt-5`}>
+        <div className={`servicesSection pt-5`} id="servicesSection">
           <div className="headings">
             <h2>
               <span className="servicesMainHeader mb-3">What We do ?</span>
@@ -259,20 +290,26 @@ function MainPage(props) {
             </label>
           </div>
         </div>
-        <div className="projectsSection text-light w-100 pt-3 pb-3">
+        <div
+          className="projectsSection text-light w-100 pt-3 pb-3"
+          id="projectsSection"
+        >
           <div className="projectsHeader d-flex justify-content-between align-items-center pb-5">
             <div className="ProjectsHeader pt-3 d-flex aloign-items-center justify-content-center">
               Recent Works
             </div>
             <div>
-              <button className="projectsButton d-flex gap-2 justify-content-center align-items-center">
+              <Link
+                to={"/projects"}
+                className="projectsButton d-flex gap-2 justify-content-center align-items-center"
+              >
                 <div className="buttonText">See All</div>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   size="lg"
                   className="Arrow"
                 />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="Projects pt-5 pb-5">

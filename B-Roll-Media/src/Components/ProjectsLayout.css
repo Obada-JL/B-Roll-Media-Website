@@ -1,0 +1,11 @@
+.secondaryTitle {
+  font-size: 28px;
+  color: rgb(198, 198, 198);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.primaryTitle {
+  font-size: 80px;
+  font-weight: 800;
+  color: rgb(233, 232, 232);
+}

@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./Components/Navbar";
-import testBg from "./assets/bg-test.webp";
 import Footer from "./Components/footer";
 import Contact from "./Components/Contact";
 // import Footer from "./Footer";

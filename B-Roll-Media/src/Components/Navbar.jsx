@@ -1,6 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import NavLogo from "../assets/b roll media.png";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 function NavBar() {
   const { ref, inView, entry } = useInView({
     /* Optional options */
@@ -15,7 +16,9 @@ function NavBar() {
         }`}
       >
         <div className="navlogo navbar-brand">
-          <img src={NavLogo} width={125} />
+          <Link to={"/"}>
+            <img src={NavLogo} width={125} />
+          </Link>
         </div>
         <button
           class="navbar-toggler bg-light"
@@ -34,27 +37,27 @@ function NavBar() {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#servicesSection">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#projectsSection">
                 Works
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#reviewsContainer">
                 Reviews
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/#ContactContainer">
                 Contact
               </a>
             </li>
