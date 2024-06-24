@@ -15,7 +15,7 @@ function ProjectsLayout() {
             style={{ transform: "translate(-50%, -50%)", left: "50%" }}
           >
             <p className="secondaryTitle">Success Stories</p>
-            <p className="primaryTitle">Case Studies</p>
+            <p className="primaryTitle">Crafting Media Brilliance</p>
           </div>
           <div style={{ position: "relative" }}></div>
           <img src={testBg} style={{ height: "75vh", width: "98.93vw" }} />

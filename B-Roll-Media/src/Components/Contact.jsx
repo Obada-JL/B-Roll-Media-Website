@@ -8,7 +8,7 @@ import "./Contact.css";
 import Footer from "./footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import ObadaPhoto from "../assets/WhatsApp Image 2024-04-14 at 13.28.15.jpeg";
+import avatar from "../assets/avatar.png";
 import { useRef } from "react";
 function Contact() {
   const contactContainer = useRef();
@@ -107,7 +107,7 @@ function Contact() {
                         icon={faPhone}
                         className="socialMediaIcon contactInfosLogo"
                       />
-                      <p className="secondSectionInfo">+90 552 493 70 22</p>
+                      <p className="secondSectionInfo">+90 536 990 92 29</p>
                     </div>
                     <div className="d-flex gap-3">
                       <FontAwesomeIcon
@@ -127,15 +127,15 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
                     <div className="personNameContainer">
-                      <p className="personName">Ghazwaan Shabaan</p>
-                      <p className="position">CEO</p>
+                      <p className="personName">Ghazwan Shabaan</p>
+                      <p className="position">CEO | Graphic Designer</p>
                     </div>
                   </div>
                 </div>
@@ -143,15 +143,15 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
                     <div className="personNameContainer">
-                      <p className="personName">Abdulaziz Abbas</p>
-                      <p className="position">Video Editor</p>
+                      <p className="personName">Abdulrahim Arif</p>
+                      <p className="position">Art Director</p>
                     </div>
                   </div>
                 </div>
@@ -159,9 +159,9 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
@@ -175,15 +175,15 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
                     <div className="personNameContainer">
-                      <p className="personName">Saleh Al Harbeli</p>
-                      <p className="position">Graphic Designer</p>
+                      <p className="personName">Abdulaziz Abbas</p>
+                      <p className="position">Motion Editor</p>
                     </div>
                   </div>
                 </div>
@@ -191,9 +191,9 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
@@ -207,15 +207,15 @@ function Contact() {
                   <div className="member">
                     <div className="PersonalPhotoContainer">
                       <img
-                        src={ObadaPhoto}
-                        width={50}
-                        height={50}
+                        src={avatar}
+                        width={75}
+                        height={75}
                         className="PersonalPhoto"
                       />
                     </div>
                     <div className="personNameContainer">
-                      <p className="personName">Abdurrahman A Arif</p>
-                      <p className="position">UI / UX Designer</p>
+                      <p className="personName">Can Sakka</p>
+                      <p className="position">Video Editor</p>
                     </div>
                   </div>
                 </div>

@@ -5,11 +5,10 @@ function Projects(props) {
   // Project1 infos
   const AllProjects = props.AllProjects;
   const [projects, setProjects] = useState([]);
-  console.log(props);
   useEffect(() => {
     const Project = AllProjects.map((project, index) => (
-      <a href="#" style={{ flex: "1 0 0" }}>
-        <div style={{ flex: "1 0 0" }}>
+      <a className="projectLink">
+        <div>
           <img
             src={project.img}
             height={498}

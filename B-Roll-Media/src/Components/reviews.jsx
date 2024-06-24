@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AtaaReview from "../assets/ataa.png";
+import AtaaReview from "../assets/Qatar Charity.png";
 import AghaReview from "../assets/agha_group.png";
 import HijazReview from "../assets/hijaz_road.png";
 import DrRfiaiReview from "../assets/dr_rifai.png";

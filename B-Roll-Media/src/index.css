@@ -68,6 +68,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+@media screen and (min-width: 800px) {
+  .projectLink {
+    flex: 1 1 0;
+  }
+}
 @media screen and (max-width: 800px) {
   .TextSection {
     width: 350px;
@@ -79,25 +84,38 @@ button:focus-visible {
   .TextSection > div > h1 {
     font-size: 40px;
   }
-  .servicesSection,
   .projectsSection,
   .reviewsContainer {
     padding: 0 20px !important;
+  }
+  .servicesSection {
+    padding: 15px 20px !important;
   }
   .servicesMainHeader,
   .ProjectsHeader,
   .header2 {
     font-size: 40px;
   }
+  .primaryTitle {
+    font-size: 40px;
+  }
   .servicesDescription {
-    font-size: 20px;
+    font-size: 20px !important;
+    margin-right: 0;
+    line-height: 23px;
+  }
+  .serviceDescription {
+    font-size: 20px !important;
+    margin-right: 0;
+    line-height: 23px;
   }
   .ServiceArrow {
     font-size: 35px;
     width: 40px;
     height: 40px;
   }
-  .serviceName {
+  .serviceName,
+  .secondaryTitle {
     font-size: 24px;
   }
   .projectsHeader {
@@ -109,6 +127,7 @@ button:focus-visible {
   }
   .cardContainer {
     flex-direction: column;
+    gap: 0;
   }
   .ContactCard {
     width: 350px;
@@ -127,5 +146,23 @@ button:focus-visible {
   .button {
     width: 180px;
     height: 70px;
+  }
+  .secondSectionInfo {
+    font-size: 18px;
+  }
+  .embedVideo {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .secondary {
+    /* display: none; */
+    /* animation-delay: 3s; */
+    /* margin-left: 22%; */
+  }
+  .scroll-parent {
+    width: 123%;
   }
 }

@@ -15,19 +15,19 @@ import Reviews from "./reviews";
 import Contact from "./Contact";
 import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import Project1 from "../assets/projects photo test 1.webp";
-import Project2 from "../assets/projects photo test 2.webp";
-import Project3 from "../assets/projects photo test 3.webp";
+import Project1 from "../assets/sakk project.jpg";
+import Project2 from "../assets/ATAA Project.jpg";
+import Project3 from "../assets/agha project.jpg";
 import { Link } from "react-router-dom";
 function MainPage(props) {
   const project1Title = "Beard Production Line: SAKK Ovens";
   const project1Date = "May 2024";
   // Project2 infos
-  const project2Title = "Syrian Refugees Shelter: Qatar Charity";
-  const project2Date = "June 2018";
+  const project2Title = "Safe School Common Approach Workshop: ATAA Relief";
+  const project2Date = "Mar 2022";
   // Project3 infos
-  const project3Title = "Graphic Design Training Course: GHAZWAN SHABAAN";
-  const project3Date = "Jul 2023";
+  const project3Title = "Industrial Catalog : AGHA Group";
+  const project3Date = "Jul 2020";
   // codeSolving User Pain Points: A Deep Dive into Spotify UX
   const AllProjects = [
     {
@@ -61,6 +61,15 @@ function MainPage(props) {
   const HideSidebar = (number) => {
     names.current.children[number].classList.remove("sidebarServices");
   };
+  const servicesContainer = useRef();
+  const onClickService = (e) => {
+    const selectService =
+      servicesContainer.current.querySelectorAll(".service");
+    for (let i = 0; i < selectService.length; i++) {
+      console.log(selectService[i].children[2]);
+    }
+  };
+
   return (
     <>
       <div style={{ position: "absolute", top: "0" }}>
@@ -166,7 +175,9 @@ function MainPage(props) {
             <p>B-Roll Media</p>
             <h1>Where Inovation Meets Storytelling</h1>
           </div>
-          <button class="button">Promo</button>
+          <button className="promoButton">
+            <span className="promoText">Promo</span>
+          </button>
         </div>
         <div className={`servicesSection pt-5`} id="servicesSection">
           <div className="headings">
@@ -182,8 +193,12 @@ function MainPage(props) {
               vision to life and take your brand to new heights"
             </p>
           </div>
-          <div className="services mb-5 mt-2">
-            <label htmlFor="service5" class="service service">
+          <div className="services mb-5 mt-2" ref={servicesContainer}>
+            <label
+              htmlFor="service5"
+              class="service service"
+              onClick={onClickService}
+            >
               <input type="checkbox" id="service5" class="faq__input" />
               <div className="d-flex justify-content-between serviceHeading">
                 <h3 class="serviceName">Filming</h3>
@@ -209,7 +224,7 @@ function MainPage(props) {
                 expectations in an innovative manner.
               </p>
             </label>
-            <label htmlFor="service1" class="service service">
+            <label htmlFor="service1" class="service" onClick={onClickService}>
               <input type="checkbox" id="service1" class="faq__input" />
               <div className="d-flex justify-content-between serviceHeading">
                 <h3 class="serviceName">Video Production</h3>
@@ -230,7 +245,7 @@ function MainPage(props) {
                 vision to life.
               </p>
             </label>
-            <label htmlFor="service2" class="service service">
+            <label htmlFor="service2" class="service " onClick={onClickService}>
               <input type="checkbox" id="service2" class="faq__input" />
               <div className="d-flex justify-content-between serviceHeading">
                 <h3 class="serviceName">Graphic Design</h3>
@@ -250,7 +265,7 @@ function MainPage(props) {
                 dreams into reality
               </p>
             </label>
-            <label htmlFor="service3" class="service service">
+            <label htmlFor="service3" class="service " onClick={onClickService}>
               <input type="checkbox" id="service3" class="faq__input" />
               <div className="d-flex justify-content-between serviceHeading">
                 <h3 class="serviceName">Web Designing & Developing</h3>
@@ -268,7 +283,7 @@ function MainPage(props) {
                 and enhance web pages according to your requirements.
               </p>
             </label>
-            <label htmlFor="service4" class="service service">
+            <label htmlFor="service4" class="service" onClick={onClickService}>
               <input type="checkbox" id="service4" class="faq__input" />
               <div className="d-flex justify-content-between serviceHeading">
                 <h3 class="serviceName">Marketing & Training</h3>
