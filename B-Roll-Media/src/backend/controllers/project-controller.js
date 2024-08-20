@@ -6,7 +6,7 @@ const getProjects = async (req, res) => {
 };
 const addProject = async (req, res) => {
   const { title, date, modalType, modalLink } = req.body;
-  console.log(req.file.filename);
+  console.log(req.file);
   const newProject = new Projects({
     title,
     date,
@@ -21,6 +21,39 @@ const addProject = async (req, res) => {
     console.log(e);
     return res.status(400).json({ error: e });
   }
-  const project = {};
 };
-module.exports = { getProjects, addProject };
+const deleteProject = async (req, res) => {
+  const { id } = req.params;
+  try {
+    await Projects.findByIdAndDelete(id);
+    res.status(200).json({ message: "Project deleted successfully" });
+  } catch (e) {
+    console.log(e);
+    res.status(400).json({ error: e });
+  }
+};
+const updateProject = async (req, res) => {
+  const { id } = req.params;
+  const { title, date, modalType, modalLink } = req.body;
+  const updateData = {
+    title,
+    date,
+    modalType,
+    modalLink,
+  };
+
+  if (req.file) {
+    updateData.picture = req.file.filename;
+  }
+
+  try {
+    const updatedProject = await Projects.findByIdAndUpdate(id, updateData, {
+      new: true,
+    });
+    res.status(200).json({ data: { project: updatedProject } });
+  } catch (e) {
+    console.log(e);
+    res.status(400).json({ error: e });
+  }
+};
+module.exports = { getProjects, addProject, deleteProject, updateProject };
